@@ -25,7 +25,7 @@ jobs:
 
   deploy:
     docker:
-      - image: ubuntu
+      - image: curlimages/curl
     steps:
       - run:
           command: curl -X POST -d {} ${netlify_endpoint}
